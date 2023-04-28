@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>French Academy</title>
+        <link rel="icon" type="image/x-icon" href="pics/icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <style>
+            *{
+                margin: 0;
+                font-family: sans-serif;
+            }
+            .web-header{
+                background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('pics/call-centre.jpg');
+                min-height: 90vh;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                width: 100%;
+                
+            }
+            .page-body{
+                width: 100%;
+            }
+            .header-menu{
+                display: flex;
+                background-color: #111;
+                opacity: 0.7;
+                width: 100%;
+            }
+            .menu-logo img{
+                width: 50%;
+                height: 50%;
+                background: transparent;
+            }
+            .menu-logo {
+                width: 20%;
+                text-align: center;
+                align-self: center;
+                padding: 25px 0px;
+            }
+            .menu-btn{
+                width: 20%;
+                align-self: center;
+                text-align: center;
+            }
+            .menu-text{
+                width: 60%;
+                text-align: center;
+                align-self: center;
+            }
+            .menu-text ul{
+                list-style-type: none;
+            }
+            .menu-text li{
+                display: inline;
+                color: white;
+                padding: 20px;
+                font-size: 17px;
+                
+            }
+            .menu-btn button{
+                color: white;
+                padding: 10px 35px;
+                justify-content: center;
+                border: none;
+                font-size: 14px;
+                border-radius: 8px;
+                background-color: #4F46E5;
+            }
+            .header-content h1{
+                color: white;
+                font-weight: bolder;
+                font-size: 35px;
+                padding-top: 250px;
+            }
+            .header-content{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+            .header-text{
+                width: 60%;
+            }
+            .header-btn button{
+                color: white;
+                padding: 13px 60px;
+                justify-content: center;
+                border: none;
+                font-size: 18px;
+                border-radius: 8px;
+                background-color: #4F46E5;
+            }
+            .header-btn{
+                padding-top: 10px;
+
+            }
+            .signUp-menu{
+                padding: 30px 20px 30px 20px;
+                margin-top: 90px;
+                width: 25%;
+                background-color: #ccc;
+                border: none;
+                opacity: 0.6;
+                border-radius: 10px;
+            }
+            .signUp-text h3{
+                font-size: 20px;
+            }
+            .signUp-text p{
+                padding-top: 5px;
+                padding-bottom: 10px;
+                font-size: 11px;
+            }
+            .signIn{
+                color: #4F46E5;
+            }
+            input[type=text] {
+                width: 90%;
+                padding: 10px;
+                border: none;
+                margin: 10px 10px 10px 0px;
+                border-radius: 8px;
+                font-size: 10px;
+            }
+            .signUp-form button{
+                color: white;
+                width: 95%;
+                padding: 8px ;
+                justify-content: center;
+                border: none;
+                font-size: 12px;
+                border-radius: 8px;
+                background-color: #4F46E5;
+            }
+            .check-btn {
+                display: flex;
+                padding-top: 30px;
+                font-size: 12px;
+                color: #84818A;
+            }
+            .check-btn label{
+                display: inline-flex;
+                padding-bottom: 5px;
+            }
+            .policy-text p{
+                padding-top: 7px;
+                font-size: 12px;
+                color: #84818A;
+            }
+            .french{
+                width: 100%;
+                min-height: 70vh;
+                background-color: #ddd;
+            }
+            .french-sec-text h1{
+                font-size: 55px;
+                text-align: center;
+                padding-top: 80px;
+                line-height: 90px;
+            }
+            .french-sec-btn{
+                display: flex;
+                width: 75%;
+                margin: auto;
+            }
+            .btn{
+                padding-top: 10%;
+                padding-bottom: 5%;
+                width: 38%;
+                align-self: center;
+                text-align: center;
+            }
+            .french-sec-btn button{
+                color: white;
+                width: auto;
+                padding: 30px 50px ;
+                justify-content: center;
+                border: none;
+                font-size: 20px;
+                border-radius: 12px;
+                background-color: #4F46E5;
+            }
+            .info-heading h1{
+                font-size: 55px;
+                text-align: center;
+                padding-top: 80px;
+                line-height: 90px;
+            }
+            .info-content{
+                display: flex;
+                width: 70%;
+                margin: auto;
+                padding: 70px 0px;
+                
+            }
+            .info-text p{
+                font-size: 22px;
+                line-height: 30px;
+            }
+            .info-media{
+                width: 50%;
+            }
+            .info-media img{
+                float: right;
+            }
+            .business-info-btn{
+                padding-top: 15px;
+            }
+            .business-info-btn button{
+                color: white;
+                width: auto;
+                padding: 15px 25px;
+                justify-content: center;
+                border: none;
+                font-size: 13px;
+                font-weight: bold;
+                border-radius: 12px;
+                background-color: #4F46E5;
+            }
+             .bg-picture{
+                background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('pics/bgpic.jpg');
+                min-height: 60vh;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                width: 100%;
+            }
+            .lang-info-text h1{
+                font-size: 55px;
+                color: white;
+                text-align: center;
+                padding: 80px 0px;
+
+            }
+            .lang-info-text p{
+                color: #eee;
+                line-height: 35px;
+                font-size: 27px;
+                text-align: center;
+            }
+            .lang-name{
+                padding: 8px 22px;
+                border: none;
+                border-radius: 17px;
+                background-color: #4F46E5;
+            }
+            .tutor-info{
+                height: 55vh;
+            }
+            .tutor-info-text h1{
+                font-size: 55px;
+                color: black;
+                text-align: center;
+                padding: 80px 0px;
+                padding-bottom: 0;
+            }
+            .tutor-info-text h3{
+                text-align: center;
+                font-size: 25px;
+                padding: 15px 0px;
+            }
+            .search-txt{
+                color: #4F46E5;
+                font-weight: bolder;
+            }
+            .tutor-info-btn{
+                text-align: center;
+            }
+            .tutor-info-btn button{
+                color: white;
+                width: auto;
+                padding: 15px 45px;
+                justify-content: center;
+                border: none;
+                font-size: 13px;
+                font-weight: bold;
+                border-radius: 12px;
+                background-color: #4F46E5;
+            }
+            .elite-french{
+                background-color: #eee;
+                height: 70vh;
+            }
+            .elite-french-text h1{
+                font-size: 50px;
+                color: black;
+                text-align: center;
+                padding: 80px 0px;
+                padding-bottom: 60px;
+            }
+            .elite-text{
+                color: #4F46E5;
+                opacity: 1;
+            }
+            .row1 ,.row2 , .row3 , .row4{
+                text-align: center;
+                padding: 0px 10px;
+            }
+            button{
+                margin: 10px 5px;
+            }
+            .row1 button, .row2 button, .row3 button , .row4 button{
+                font-size: 15px;
+                background-color: #c2bfde;
+                border: none;
+                border-radius: 20px;
+                padding: 12px 60px;
+            }
+            .consultant{
+                background-color: #4F46E5;
+            }
+            .consltt-heading h1{
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                padding: 50px 0px;
+            }
+            .contact h1{
+                font-size: 50px;
+                color: black;
+                text-align: center;
+                padding-top: 80px;
+            }
+            .contact h3{
+                font-size: 25px;
+                font-weight: bolder;
+                color: black;
+                text-align: center;
+                padding: 30px 0px;
+            }
+            .contactUs-btn{
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .contactUs-btn button{
+                color: white;
+                width: auto;
+                padding: 15px 45px;
+                justify-content: center;
+                border: none;
+                font-size: 13px;
+                font-weight: bold;
+                border-radius: 12px;
+                background-color: #4F46E5;
+            }
+            .footer {
+                background-color: #222;
+                font-size: x-small;
+                padding: 50px;
+            }
+            .footer-content{
+                display: flex;
+                width: 100%;
+            }
+            .aboutus{
+                width: 30%;
+            }
+            .customer-support{
+                width: 60%;
+            }
+            .customer-support h1{
+                padding-bottom: 10px;
+                color: #ccc;
+                font-weight: light;
+            }
+            .customer-support p{
+                color: #bbb;
+                line-height: 19px;
+            }
+            .social-media{
+                width: 20%;
+            }
+            .aboutus h1{
+                color: #ccc;
+                font-weight: light;
+                padding-bottom: 10px;
+            }
+            .aboutus p{
+                color: #bbb;
+                line-height: 18px;
+            }
+            .social-media h1{
+                color: #ccc;
+                padding-bottom: 10px;
+            }
+            .social-media p{
+                color: #bbb;
+                line-height: 19px;
+            }
+            .faqs-text {
+                color: #00C48C;
+            }
+            .fa-brands{
+                color: white;
+                font-size: 15px;
+                padding: 5px;
+            }
+            button:hover{
+                background-color: #342dba;
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="page-body">  
+              <!-- Header Section start -->
+            <header class="web-header">
+                <div class="header-menu">
+                    <div class="menu-logo">
+                        <img src="pics/11.png" alt="">
+                    </div>
+
+                    <div class="menu-text">
+                        <ul>
+                            <li>About</li>
+                            <li>Services</li>
+                            <li>Support</li>
+                        </ul>
+                    </div>
+                    <div class="menu-btn">
+                        <button>Call to action</button>
+                    </div>
+                </div>
+                <div class="header-content">
+                    <div class="header-text">
+                        <div class="header-para">
+                            <h1>Welcome to The Elite French Tutoring Academy<br> An Leading Establishment for Online French Tutors<br> Based in New York.</h1>
+                        </div>
+                        <div class="header-btn">
+                            <button>Call to action</button>
+                        </div>
+                    </div>
+                    <div class="signUp-menu">
+                        <div class="signUp-text">
+                            <h3>Sign Up</h3>
+                            <p>Already have an account? <span class="signIn">Sign in</span></p>
+                            <hr>
+                        </div>
+                        <div class="signUp-form">
+                            <form action="">
+                                <input type="text" placeholder=" Full name">
+                                <input type="text" placeholder="Email">
+                                <input type="text" placeholder="Phone Number">
+                                <button type="submit">Sign Up</button>
+                            </form>
+                        </div>
+                        <div class="check-btn">
+                            <form action="">
+                                <input type="checkbox" id="accept" name="agreement">
+                                <label for="accept">By clicking Create account, I agree that I have read<br> and accepted the Terms of<br> Use and Privacy Policy.</label>
+                            </form>
+                        </div>
+                        <hr>
+                        <div class="policy-text">
+                            <p>Protected by RECAPTCHA and subject to the <span class="signIn"> Cuboid <br> Privacy Policy</span> and <span> of Service.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Header Section ends -->
+            <!-- Learn french Section start -->
+            <section class="french">
+                <div class="french-sec-text">
+                    <h1>Confidently Speak French with<br> Personalized Coaching</h1>
+                </div>
+                <div class="french-sec-btn">
+                    <div class="btn">
+                        <button>Private Lessons</button>
+                    </div>
+                    <div class="btn">
+                        <button>24/7 Support</button>
+                    </div>
+                    <div class="btn">
+                        <button>Flexible Schedule</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Learn fernch info ends -->
+            <!-- Buniness oppurtunity info section start -->
+            <section class="business-info">
+                <div class="info-heading">
+                    <h1>International Business<br> Opportunities</h1>
+                </div>
+                <div class="info-content">
+                    <div class="info-text">
+                        <p>Elite French tutors offer highly personalized<br> and personal coaching that gets you speaking<br> fluently in no time at all.<br><br> Whether you want to expand your language<br> skills or wish to explore international business<br> opportunities, we help you get the confidence<br> to talk like a true Parisian.</p>
+                        <div class="business-info-btn">
+                            <button>Call to Action</button>
+                        </div>
+                    </div>
+                    <div class="info-media">
+                        <div class="info-media-img">
+                            <img src="pics/business-img2.jpeg" alt="" width="400px" height="auto">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Buniness oppurtunity info section ends -->
+            <!-- French Language info section start -->
+            <section class="lang-info">
+                <div class="bg-picture">
+                    <div class="lang-info-text">
+                        <h1><span class="lang-name">Learning French</span> is hard!</h1>
+                        <p>But what is even harder is not being able to find tutors who offer you an enriching learning<br> experience and make real-time changes to your program.</p>
+                        <br><br>
+                        <p>Getting yourself enrolled in language learning classes that can provide you with real-life<br> experience is a tough nut to crack.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- French Language info section ends -->
+            <!-- French Tutor info section start -->
+            <section class="tutor-info">
+                <div class="tutor-info-text">
+                    <h1>Have you been <div class="search-txt"> searching for tutors?</div></h1>
+                    <h3>who give you their undivided attention and who enable you<br> to speak French fluently</h3>
+                </div>
+                <div class="tutor-info-btn">
+                    <button>Call to Action</button>
+                </div>
+            </section>
+            <!-- French Tutor info section ends -->
+            <!-- Elite French info section start-->
+            <section class="elite-french">
+                <div class="elite-french-text">
+                    <h1>With <span class="elite-text"> Elite French</span> Tutors <br>You Are Not Just a Number</h1>
+                </div>
+                <div class="elite-french-btns">
+                    <div class="row1">
+                        <button>Create your own schedule</button>
+                        <button>Focus on both conversational and grammar skills</button>
+                        <button>Adaptable to all skill levels</button>
+                    </div>
+                    <div class="row2">
+                        <button>100% undivided attention</button>
+                        <button>Highly targeted language practice</button>
+                        <button>Plan your progress and goals</button>
+                    </div>
+                    <div class="row3">
+                        <button>Highly engaging lessons</button>
+                        <button>Extensive support</button>
+                    </div>
+                    <div class="row4">
+                        <button>Exclusive one-on-one coaching</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Elite French info section ends-->
+            <!-- Consultant info section start-->
+            <section class="consultant">
+                <div class="consltt-heading">
+                    <h1>Schedule a Free Consultation Today</h1>
+                </div>
+            </section>
+            <!-- Consultant info section ends-->
+            <!-- Contact Us info section start-->
+            <section class="contactUs">
+                <div class="contact">
+                    <h1>Get in touch!</h1>
+                    <h3>Why struggle for months or years when you can learn faster<br> with your private French coach?</h3>
+                </div>
+                <div class="contactUs-btn">
+                    <button>Call Us Now</button>
+                </div>
+            </section>
+            <!-- Contact Us info section ends-->
+            <!-- Footer starts -->
+            <section class="footer">
+                <div class="footer-content">
+                    <div class="aboutus">
+                        <h1>About Us</h1>
+                        <p>The Elite French Tutoring Academy<br> An Leading Establishment for Online French Tutors<br> Based in New York.</p>
+                        <br>
+                        <p><small>© 2023. All Rights Reserved</small></p>
+                    </div>
+                    <div class="customer-support">
+                        <h1>Customer Support</h1>
+                        <p>The Blog</p>
+                        <p><div class="faqs-text">FAQs</div></p>
+                    </div>
+                    <div class="social-media">
+                        <h1>Contact Us</h1>
+                        <p>PO Box 16122 Collins Street West<br> Victoria 8007 NEW YORK<br> +00 00 00000 9999</p>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer ends -->
+        </div>  
+    </body>
+</html>
